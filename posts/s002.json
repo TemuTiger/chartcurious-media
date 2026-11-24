@@ -1,0 +1,7 @@
+{"hook":["How fast is solar","taking over?"],
+ "subhook":"Solar's share of the world's electricity",
+ "bars":[{"label":"2015","value":1.07},{"label":"2017","value":1.75},{"label":"2019","value":2.60},{"label":"2021","value":3.73},{"label":"2023","value":5.61},{"label":"2025","value":8.75,"highlight":true}],
+ "unit":"%","decimals":1,
+ "takeaway":["From 1% to almost 9%","of the world's power in 10 years."],
+ "source":"Source: Ember, Energy Institute via Our World in Data",
+ "note":"2025 figures are early estimates."}
