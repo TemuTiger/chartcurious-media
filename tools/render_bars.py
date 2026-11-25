@@ -48,7 +48,7 @@ def render(spec, out):
         if t < T_HOOK + T_GROW + T_TAKE:
             mark(d, 80, 150, 60)
             d.text((160, 164), "Chart Curious", font=font(34), fill=MUT)
-            y = text_block(d, spec["hook"], F_HOOK, 250, WH, alpha=ease(t / 0.4))
+            y = text_block(d, spec["hook"], F_HOOK, 250, WH, alpha=1.0)
             if spec.get("subhook"):
                 text_block(d, [spec["subhook"]], F_SUB, y + 8, MUT, alpha=ease((t - 0.3) / 0.5))
             g = ease((t - T_HOOK) / T_GROW)

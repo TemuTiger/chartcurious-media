@@ -1,0 +1,7 @@
+{"next_id": 4,
+ "produced": ["s001","s002","s003"],
+ "scheduled_until_darwin": "2026-11-27",
+ "posting_time_darwin": "10:37",
+ "channels": {"tiktok": "6b0615b48541f09ecb92425c", "instagram": "6b0618698541f09ecb928df5", "youtube": "6b061b2c8541f09ecb92e1e5"},
+ "buffer_org": "6b060c81b25180b2cd3ada79",
+ "experiments": {"E001": "silent baseline s001-s003", "E002": "voice-over vs silent, next batch (2 voiced, 2 silent)"}}
