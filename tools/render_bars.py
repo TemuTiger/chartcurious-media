@@ -1,7 +1,7 @@
 """Chart Curious — animated bar chart renderer (1080x1920, 30fps, H.264).
 
 Usage: python3 render_bars.py spec.json out.mp4
-spec: {hook:[lines], subhook, bars:[{label,value,highlight?}], unit, decimals,
+spec: {hook:[lines], subhook, bars:[{label,value,highlight?}], unit, prefix?, decimals,
        takeaway:[lines], source, note}
 """
 import json, sys, subprocess, tempfile, os, glob
@@ -37,7 +37,7 @@ def text_block(d, lines, f, y, fill, x=80, gap=12, alpha=1.0):
 def render(spec, out):
     bars = spec["bars"]; n = len(bars)
     vmax = max(b["value"] for b in bars) * 1.08
-    dec = spec.get("decimals", 1); unit = spec.get("unit", "")
+    dec = spec.get("decimals", 1); unit = spec.get("unit", ""); prefix = spec.get("prefix", "")
     T_HOOK, T_GROW, T_TAKE, T_END = 2.2, 4.5, 4.0, 2.3
     total = int((T_HOOK + T_GROW + T_TAKE + T_END) * FPS)
     tmp = tempfile.mkdtemp()
@@ -66,7 +66,7 @@ def render(spec, out):
                 if w > 2:
                     d.rounded_rectangle([80, yy + 44, 80 + w, yy + 44 + bh], radius=8, fill=col)
                 val = b["value"] * stagger; dd = b.get("decimals", dec)
-                d.text((80 + w + 16, yy + 44 + bh / 2 - 21), f"{val:.{dd}f}{unit}", font=F_VAL,
+                d.text((80 + w + 16, yy + 44 + bh / 2 - 21), f"{prefix}{val:,.{dd}f}{unit}", font=F_VAL,
                        fill=tuple(int(BG[c] + (WH[c] - BG[c]) * fade) for c in range(3)))
             if t > T_HOOK + T_GROW:
                 a = ease((t - T_HOOK - T_GROW - 0.4) / 0.6)
