@@ -1,9 +1,9 @@
 # Idea backlog (pick from the top; mark used ones with the post ID)
 | # | Hook | Likely data |
 |---|---|---|
-| 1 | Which countries get the most power from wind? | owid/energy-data wind_share_elec |
+| 1 | ✅ USED s005 — Which countries get the most power from wind? | owid/energy-data wind_share_elec |
 | 2 | Coal's share of world electricity: how far has it fallen? | owid/energy-data coal_share_elec, World |
-| 3 | China emits the most CO2 in total, but who emits most per person? (top 10 large countries) | owid/co2-data |
+| 3 | ✅ USED s003 (per-person CO2) — China emits the most CO2 in total, but who emits most per person? (top 10 large countries) | owid/co2-data |
 | 4 | Which country uses the most electricity per person? | owid/energy-data per_capita_electricity |
 | 5 | Nuclear: which countries rely on it most? | owid/energy-data nuclear_share_elec |
 | 6 | Australia vs the world: how clean is our electricity? | owid/energy-data carbon_intensity_elec |
@@ -36,9 +36,9 @@
 Rule: alternate energy/climate with a non-energy topic. Rank = expected audience pull (broad relatability × surprise). Check the data is reachable and reputable before use; skip if not.
 | Rank | Hook | Likely data | Format idea |
 |---|---|---|---|
-| 1 | Which countries have the longest life expectancy, and where does Australia rank? | OWID life expectancy (UN WPP) | single chart |
-| 2 | The world's population in 1950 vs today: who grew the most? | datasets/population | then vs now |
-| 3 | How long would you work to buy a Big Mac in different countries? | The Economist big-mac-index GitHub | quiz, reveal last |
+| 1 | ⏭ SKIPPED 26 Nov: only 2019 data reachable on GitHub raw (owid-datasets); retry if a current UN WPP file is reachable — Which countries have the longest life expectancy, and where does Australia rank? | OWID life expectancy (UN WPP) | single chart |
+| 2 | ✅ USED s004 (as 1960-2025 people added; World Bank data starts 1960) — The world's population in 1950 vs today: who grew the most? | datasets/population | then vs now |
+| 3 | ✅ USED s006 (as US$ price, July 2026; wage data not in the repo) — How long would you work to buy a Big Mac in different countries? | The Economist big-mac-index GitHub | quiz, reveal last |
 | 4 | Which countries have won the most Olympic gold medals per person? | Olympic medal tables + population (check source) | single chart |
 | 5 | How many hours a year do people work in different countries? | OWID annual working hours (Penn World Table) | single chart |
 | 6 | The countries where people are getting taller fastest | OWID human height (NCD-RisC) | then vs now |

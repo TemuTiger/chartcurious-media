@@ -1,7 +1,49 @@
-{"next_id": 4,
- "produced": ["s001","s002","s003"],
- "scheduled_until_darwin": "2026-11-27",
+{
+ "next_id": 7,
+ "produced": [
+  "s001",
+  "s002",
+  "s003",
+  "s004",
+  "s005",
+  "s006"
+ ],
+ "scheduled_until_darwin": "2026-11-30",
  "posting_time_darwin": "10:37",
- "channels": {"tiktok": "6b0615b48541f09ecb92425c", "instagram": "6b0618698541f09ecb928df5", "youtube": "6b061b2c8541f09ecb92e1e5"},
+ "channels": {
+  "tiktok": "6b0615b48541f09ecb92425c",
+  "instagram": "6b0618698541f09ecb928df5",
+  "youtube": "6b061b2c8541f09ecb92e1e5"
+ },
  "buffer_org": "6b060c81b25180b2cd3ada79",
- "experiments": {"E001": "silent baseline s001-s003", "E002": "voice-over vs silent, next batch (2 voiced, 2 silent)"}}
+ "experiments": {
+  "E001": "silent baseline s001-s003",
+  "E002": "voice-over vs silent. 26 Nov run: E002 voice not possible: workspace proxy blocks all ElevenLabs/GCS audio download hosts (CONNECT 403 on storage.googleapis.com, elevenlabsusercontent.com, api.us.elevenlabs.io), so audio can't be muxed; no generation was run (no credits spent). s004-s006 shipped silent. Needs a different route (e.g. a run with Dan's Mac, or an allowlisted host) before E002 can start."
+ },
+ "last_run": {
+  "date": "2026-11-26",
+  "queued": {
+   "s004": "2026-11-28",
+   "s005": "2026-11-29",
+   "s006": "2026-11-30"
+  },
+  "buffer_post_ids": {
+   "s004": [
+    "6b07598bb8e2338b85672eba",
+    "6b07598cd4eda4b659b34c09",
+    "6b07598db8e2338b85672f54"
+   ],
+   "s005": [
+    "6b07599eb96dd8d351657814",
+    "6b07599fd4eda4b659b3502f",
+    "6b07599fa791bea1b22ce4c6"
+   ],
+   "s006": [
+    "6b0759a09f6dda31cc9cf0bf",
+    "6b0759a1a791bea1b22ce523",
+    "6b0759a1d4eda4b659b350f4"
+   ]
+  },
+  "renderer": "added optional spec.prefix and thousands separators"
+ }
+}
