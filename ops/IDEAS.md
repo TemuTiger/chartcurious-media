@@ -31,3 +31,23 @@
 | 28 | "Your country" series: top 10 by share of wind+solar | owid/energy-data |
 | 29 | Biggest oil producers per person | owid/energy-data oil_prod_per_capita |
 | 30 | Which country's electricity is dirtiest per kWh? | owid/energy-data carbon_intensity_elec |
+
+## Broadened backlog (added 25 Nov after advice review; D009 covers money, sport, history and everyday life, not only energy)
+Rule: alternate energy/climate with a non-energy topic. Rank = expected audience pull (broad relatability × surprise). Check the data is reachable and reputable before use; skip if not.
+| Rank | Hook | Likely data | Format idea |
+|---|---|---|---|
+| 1 | Which countries have the longest life expectancy, and where does Australia rank? | OWID life expectancy (UN WPP) | single chart |
+| 2 | The world's population in 1950 vs today: who grew the most? | datasets/population | then vs now |
+| 3 | How long would you work to buy a Big Mac in different countries? | The Economist big-mac-index GitHub | quiz, reveal last |
+| 4 | Which countries have won the most Olympic gold medals per person? | Olympic medal tables + population (check source) | single chart |
+| 5 | How many hours a year do people work in different countries? | OWID annual working hours (Penn World Table) | single chart |
+| 6 | The countries where people are getting taller fastest | OWID human height (NCD-RisC) | then vs now |
+| 7 | Which countries have the most tourists per resident? | OWID / UN Tourism (check) | single chart |
+| 8 | How much has a person's income grown since 1990? Australia vs others | datasets/gdp + population | then vs now |
+| 9 | Fertility rate: how many countries are now below 2 children per woman? | OWID fertility (UN WPP) | counter + chart |
+| 10 | Which countries have the most people over 65? | OWID / UN WPP | single chart |
+| 11 | Internet use: how fast did the world get online? | OWID share using the internet (ITU) | line race |
+| 12 | Which countries eat the most meat per person? | OWID meat supply (FAO) | single chart |
+| 13 | Child mortality 1950 vs today | OWID child mortality (UN IGME) | then vs now |
+| 14 | Literacy: the countries that changed fastest | OWID literacy | then vs now |
+| 15 | 3-in-1 (35–60s, E004): "Three charts that show how much the world changed since 1990" | combine above | long format |
