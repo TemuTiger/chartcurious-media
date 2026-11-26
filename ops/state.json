@@ -1,14 +1,17 @@
 {
- "next_id": 7,
+ "next_id": 10,
  "produced": [
   "s001",
   "s002",
   "s003",
   "s004",
   "s005",
-  "s006"
+  "s006",
+  "s007",
+  "s008",
+  "s009"
  ],
- "scheduled_until_darwin": "2026-11-30",
+ "scheduled_until_darwin": "2026-12-03",
  "posting_time_darwin": "10:37",
  "channels": {
   "tiktok": "6b0615b48541f09ecb92425c",
@@ -18,32 +21,36 @@
  "buffer_org": "6b060c81b25180b2cd3ada79",
  "experiments": {
   "E001": "silent baseline s001-s003",
-  "E002": "voice-over vs silent. 26 Nov run: E002 voice not possible: workspace proxy blocks all ElevenLabs/GCS audio download hosts (CONNECT 403 on storage.googleapis.com, elevenlabsusercontent.com, api.us.elevenlabs.io), so audio can't be muxed; no generation was run (no credits spent). s004-s006 shipped silent. Needs a different route (e.g. a run with Dan's Mac, or an allowlisted host) before E002 can start."
+  "E002": "voice-over vs silent. 26 Nov run: E002 voice not possible: workspace proxy blocks all ElevenLabs/GCS audio download hosts (CONNECT 403 on storage.googleapis.com, elevenlabsusercontent.com, api.us.elevenlabs.io), so audio can't be muxed; no generation was run (no credits spent). s004-s006 shipped silent. Needs a different route (e.g. a run with Dan's Mac, or an allowlisted host) before E002 can start. 27 Nov run: E002 not attempted; the first 2 videos after 25 Nov were s004/s005 (voice not possible then), so s007-s009 shipped silent per the E002 rule. No ElevenLabs generation run."
  },
  "last_run": {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "queued": {
-   "s004": "2026-11-28",
-   "s005": "2026-11-29",
-   "s006": "2026-11-30"
+   "s007": "2026-12-01",
+   "s008": "2026-12-02",
+   "s009": "2026-12-03"
   },
   "buffer_post_ids": {
-   "s004": [
-    "6b07598bb8e2338b85672eba",
-    "6b07598cd4eda4b659b34c09",
-    "6b07598db8e2338b85672f54"
+   "s007": [
+    "6b08aad982b7c4bc165402e8",
+    "6b08aad92b711838a8bba586",
+    "6b08aada2b711838a8bba5e4"
    ],
-   "s005": [
-    "6b07599eb96dd8d351657814",
-    "6b07599fd4eda4b659b3502f",
-    "6b07599fa791bea1b22ce4c6"
+   "s008": [
+    "6b08aaeb69a72ce420555638",
+    "6b08aaec2b711838a8bba987",
+    "6b08aaeccce15832d7d65477"
    ],
-   "s006": [
-    "6b0759a09f6dda31cc9cf0bf",
-    "6b0759a1a791bea1b22ce523",
-    "6b0759a1d4eda4b659b350f4"
+   "s009": [
+    "6b08aaedcce15832d7d654a3",
+    "6b08aaee860e3591ea332863",
+    "6b08aaee69a72ce420555787"
    ]
   },
-  "renderer": "added optional spec.prefix and thousands separators"
+  "data": {
+   "s007": "owid-energy-data World coal_share_elec, coal_electricity (2025 early estimates)",
+   "s008": "datasets/gdp + datasets/population 2023 (latest GDP year)",
+   "s009": "owid-energy-data per_capita_electricity 2024, countries 1m+ people"
+  }
  }
 }

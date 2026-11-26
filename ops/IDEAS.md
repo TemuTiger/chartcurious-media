@@ -2,9 +2,9 @@
 | # | Hook | Likely data |
 |---|---|---|
 | 1 | ✅ USED s005 — Which countries get the most power from wind? | owid/energy-data wind_share_elec |
-| 2 | Coal's share of world electricity: how far has it fallen? | owid/energy-data coal_share_elec, World |
+| 2 | ✅ USED s007 (share vs output since 2007 peak) — Coal's share of world electricity: how far has it fallen? | owid/energy-data coal_share_elec, World |
 | 3 | ✅ USED s003 (per-person CO2) — China emits the most CO2 in total, but who emits most per person? (top 10 large countries) | owid/co2-data |
-| 4 | Which country uses the most electricity per person? | owid/energy-data per_capita_electricity |
+| 4 | ✅ USED s009 (generation per person, 2024) — Which country uses the most electricity per person? | owid/energy-data per_capita_electricity |
 | 5 | Nuclear: which countries rely on it most? | owid/energy-data nuclear_share_elec |
 | 6 | Australia vs the world: how clean is our electricity? | owid/energy-data carbon_intensity_elec |
 | 7 | How much of the UK's power came from coal in 2012 vs now? | owid/energy-data |
@@ -15,7 +15,7 @@
 | 12 | Who emits more: aviation or shipping? (only if a reliable dataset is reachable) | check before use |
 | 13 | Population: which countries will add the most people by 2050? | datasets/population or UN via OWID if reachable |
 | 14 | The world's most populous countries, 1950 vs today | datasets/population |
-| 15 | GDP per person: Australia vs the biggest economies | datasets/gdp + population |
+| 15 | ✅ USED s008 (2023, Australia vs 10 biggest economies) — GDP per person: Australia vs the biggest economies | datasets/gdp + population |
 | 16 | Which country gets most of its energy (not just electricity) from renewables? | owid/energy-data renewables_share_energy |
 | 17 | Germany's electricity mix: 2000 vs latest | owid/energy-data |
 | 18 | Which countries have cut CO2 the most since 1990? | owid/co2-data |
