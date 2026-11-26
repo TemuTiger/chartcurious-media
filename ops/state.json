@@ -21,7 +21,8 @@
  "buffer_org": "6b060c81b25180b2cd3ada79",
  "experiments": {
   "E001": "silent baseline s001-s003",
-  "E002": "voice-over vs silent. 26 Nov run: E002 voice not possible: workspace proxy blocks all ElevenLabs/GCS audio download hosts (CONNECT 403 on storage.googleapis.com, elevenlabsusercontent.com, api.us.elevenlabs.io), so audio can't be muxed; no generation was run (no credits spent). s004-s006 shipped silent. Needs a different route (e.g. a run with Dan's Mac, or an allowlisted host) before E002 can start. 27 Nov run: E002 not attempted; the first 2 videos after 25 Nov were s004/s005 (voice not possible then), so s007-s009 shipped silent per the E002 rule. No ElevenLabs generation run."
+  "E002": "voice-over vs silent. 26 Nov run: E002 voice not possible: workspace proxy blocks all ElevenLabs/GCS audio download hosts (CONNECT 403 on storage.googleapis.com, elevenlabsusercontent.com, api.us.elevenlabs.io), so audio can't be muxed; no generation was run (no credits spent). s004-s006 shipped silent. Needs a different route (e.g. a run with Dan's Mac, or an allowlisted host) before E002 can start. 27 Nov run: E002 not attempted; the first 2 videos after 25 Nov were s004/s005 (voice not possible then), so s007-s009 shipped silent per the E002 rule. No ElevenLabs generation run.",
+  "E006": "v2 format (punchline-first hook, motion from frame 0, sound bed, 8s) on s004-s009 vs v1 (s001-s003). Primary metric: avg watch time % and views per post at 48h. Hook and sound change together (deliberate: growth over clean attribution); review 4 Dec."
  },
  "last_run": {
   "date": "2026-11-27",
@@ -52,5 +53,6 @@
    "s008": "datasets/gdp + datasets/population 2023 (latest GDP year)",
    "s009": "owid-energy-data per_capita_electricity 2024, countries 1m+ people"
   }
- }
+ },
+ "format": "v2"
 }
